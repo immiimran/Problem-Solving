@@ -1,8 +1,9 @@
-// Make a simple function called greet that returns the most-famous "hello world!".
 void main() {
-  print(greet());
+  print(invert([1, 2, 3, 4, 5]));
+  print(invert([1, -2, 3, -4, 5]));
+  print(invert([]));
 }
 
-String greet() {
-  return 'hello world!';
+List<int> invert(List<int> numbers) {
+  return numbers.map((n) => -n).toList();
 }
