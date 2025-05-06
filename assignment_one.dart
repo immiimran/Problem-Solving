@@ -1,9 +1,18 @@
-void main() {
-  print(invert([1, 2, 3, 4, 5]));
-  print(invert([1, -2, 3, -4, 5]));
-  print(invert([]));
-}
+//You're writing code to control your town's traffic lights. 
+//You need a function to handle each change from green, to yellow, 
+//to red, and then to green again.//
 
-List<int> invert(List<int> numbers) {
-  return numbers.map((n) => -n).toList();
+
+void main() {
+  String updateLight(String current) {
+    if (current == 'green') {
+      return 'yellow';
+    } else if (current == 'yellow') {
+      return 'red';
+    } else if (current == 'red') {
+      return 'green';
+    } else {
+      return 'invalid';
+    }
+  }
 }
