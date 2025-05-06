@@ -1,18 +1,16 @@
-//You're writing code to control your town's traffic lights. 
-//You need a function to handle each change from green, to yellow, 
-//to red, and then to green again.//
+//Given a non-empty array of integers, 
+//return the result of multiplying the values together in order. Example://
+//[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
-
+//Solution code past here:
 void main() {
-  String updateLight(String current) {
-    if (current == 'green') {
-      return 'yellow';
-    } else if (current == 'yellow') {
-      return 'red';
-    } else if (current == 'red') {
-      return 'green';
-    } else {
-      return 'invalid';
+  int grow(List<int> arr) {
+    int result = 1;
+
+    for (int num in arr) {
+      result *= num;
     }
+
+    return result;
   }
 }
